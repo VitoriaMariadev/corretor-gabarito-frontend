@@ -1,0 +1,22 @@
+.header{
+    width: 20%;
+    height: 100vh;
+    background-color: #243757;
+    transition: 1s ease-out;
+    display: flex;
+    align-items: end;
+}
+
+.header-arrow{
+    width: 100%;
+    height: 10%;
+    background-color: #243D68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-arrow > img{
+    width: 30px;
+}
