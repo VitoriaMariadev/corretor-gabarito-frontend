@@ -12,7 +12,7 @@ const RotasExistente = props => (
             <Route  exact path="/Login" element={<Login/>}></Route>
             <Route  exact path="/Create_User" element={<CreateUser/>}></Route>
             <Route  exact path="/" element={<Home/>}></Route>
-            <Route  exact path="/Files/:id" element={<Files/>}></Route>
+            <Route  exact path="/Files/:name/:id" element={<Files/>}></Route>
         </Routes>
     </main>
 )
