@@ -7,6 +7,7 @@ import arrow from '../../Images/arrow.svg'
 export const Header = () => {
 
     const [user, setUser] = useState('')
+    const [div, setDiv] = useState('header')
 
     const getUser = () => {
         const userGet = getNameUser()
@@ -16,18 +17,13 @@ export const Header = () => {
     }
 
     const getMenu = () => {
-        const menu = document.querySelector('.header')
 
-        if (menu.style.width === ''){
-            menu.style.width = '5%'
+        if (div === 'header'){
+            setDiv('header close')
+        }else{
+            setDiv('header')
         }
-        else{
-            if (menu.style.width === '20%'){
-                menu.style.width = '5%'
-            }else{
-                menu.style.width = '20%'
-            }
-        }
+
     }
 
     useEffect(() =>{
@@ -35,7 +31,17 @@ export const Header = () => {
     },[user])
 
     return(
-        <main className="header">
+        <main className={div}>
+
+            <div className="header-user">
+
+                <div className="header-user-svg"></div>
+
+                <div className="header-user-name">
+                    <p>{user}</p>
+                </div>
+
+            </div>
 
             <div className="header-arrow" onClick={getMenu}>
 
