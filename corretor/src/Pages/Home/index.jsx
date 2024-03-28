@@ -63,7 +63,7 @@ export const Home = () => {
             <Header></Header>
             <main className='main-home'>
 
-                {loading?(
+                {loading&&(
                     
                     folders.map((items, index) => (
                         <div className="main-home-container" key={index}>
@@ -79,9 +79,12 @@ export const Home = () => {
                         </div>
     
                     ))
-                ):(
-                    <h1>pastas não encontradas</h1>
+
                 )}
+
+                <div className="main-home-container">
+                    
+                </div>
 
 
             </main>
