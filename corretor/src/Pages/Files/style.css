@@ -1,0 +1,192 @@
+.main-files{
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    flex-direction: column;
+
+}
+
+.name-folder{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: end;
+    padding-left: 5%;
+}
+
+.name-folder-icon{
+    width: 5%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-folder-icon > img{
+    width: 80%;
+}
+
+.name-folder-name{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-files-container{
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    align-items: start;
+    justify-content: start;
+    padding-top: 2vh;
+    padding-left: 2%;
+}
+
+.main-files-container-file{
+    width: 8vw;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.main-files-container-file-folder{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-files-container-file-folder > img{
+    width: 65%;
+    cursor: pointer;
+}
+
+.main-files-container-file-folder > img:hover{
+    width: 70%;
+}
+
+/* .main-files-container-file-folder-svg{
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../../Images/folder.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    cursor: pointer;
+} */
+
+.main-files-container-file-title{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-files-container-file-title > p{
+    font-weight: 800; 
+    letter-spacing: 1px;
+}
+
+.main-files-container-file-plus{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-files-container-file-plus > svg{
+    cursor: pointer;
+    color: #243757;
+    font-size: 5.5rem;
+}
+
+.main-files-container-file-plus > svg:hover{
+    font-size: 5.8rem;
+}
+
+.folder-model{
+
+    height: 15vh;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.folder-model-name{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.folder-model-name > p {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.folder-model-input{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.folder-model-input-name{
+    width: 80%;
+    height: 35%;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+}
+
+.folder-model-input-field{
+    width: 80%;
+    height: 40%;
+}
+
+.folder-model-input-field > input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 3%;
+    font-size: 1rem;
+    background-color: #c7c7c7;
+}
+
+.folder-model-buttom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.folder-model-buttom > button{
+    border: none;
+    width: 50%;
+    height: 80%;
+    background-color: #243757;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+}

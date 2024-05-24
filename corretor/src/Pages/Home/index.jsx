@@ -24,8 +24,8 @@ export const Home = () => {
         }
     }
 
-    const getFolderId = (name, id) => {
-        window.location.href = `/Files/${name}/${id}`
+    const getFolderId = (id) => {
+        window.location.href = `/Files/${id}`
     }
 
     const getFolders = async () => {
@@ -98,7 +98,7 @@ export const Home = () => {
                     folders.map((items, index) => (
                         <div className="main-home-container" key={index}>
                             <div className="main-home-container-folder">
-                                <img src={folder} alt="" onClick={() => getFolderId(items.name, items.id)}/>
+                                <img src={folder} alt="" onClick={() => getFolderId(items.id)}/>
     
                                 {/* <div className="main-home-container-folder-svg"></div> */}
                             </div>
